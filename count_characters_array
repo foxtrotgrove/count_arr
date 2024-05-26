@@ -1,0 +1,20 @@
+def count_characters(strings):
+    """
+    Returns the total number of characters in an array of strings.
+
+    :param strings: List of strings.
+    :return: Total number of characters in the list of strings.
+    """
+    # Initialize the character counter
+    total_characters = 0
+    
+    # Iterate over each string in the array of strings
+    for string in strings:
+        # Add the number of characters in the current string to the total counter
+        total_characters += len(string)
+    
+    return total_characters
+
+# Example usage:
+strings = ["hello", "world", "python", "programming"]
+print(count_characters(strings))  # Output: 27
